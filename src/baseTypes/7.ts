@@ -4,16 +4,15 @@
 */
 
 enum Weekday {
-  MONDAY,
-  TUESDAY,
-  WEDNESDAY,
-  THUERSDAY, 
-  FRIDAY,
-  SATURDAY,
-  SUNDAY,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thuersday, 
+  Friday,
+  Saturday,
+  Sunday,
 }
 
-const isWeekend = {
-  weekend: Weekday.SATURDAY,
-  weekend: Weekday.SUNDAY
+function isWeekend(day: Weekday): boolean {
+  return day === Weekday.Saturday || day === Weekday.Sunday;
 }
