@@ -4,14 +4,14 @@
 */
 
 
-function getPromise<T> () {
-  return new Promise<T>((resolve) => {
-    resolve(['Text', 50]as T);
+function getPromise():Promise<[string, number]> {
+  return new Promise((resolve) => {
+    resolve(['Text', 50]);
   });
 }
 
-getPromise<[string, number]>()
-.then((data) => {
+getPromise()
+.then((data: [string, number]) => {
   console.log(data);
 });
 
